@@ -1,3 +1,26 @@
+let items = [
+    {
+        name: 'Brand Earphones',
+        price: 30,
+        image: 'img/earphones.jpg'
+    },
+    {
+        name: 'Brand Laptop',
+        price: 330,
+        image: 'img/laptop.jpg'
+    },
+    {
+        name: 'Brand TV Screen',
+        price: 430,
+        image: 'img/screen.jpg'
+    },
+    {
+        name: 'Brand Tablet',
+        price: 230,
+        image: 'img/tablet.jpg'
+    },
+]
+
 let cart = [];
 
 let list = document.querySelector('ul');
