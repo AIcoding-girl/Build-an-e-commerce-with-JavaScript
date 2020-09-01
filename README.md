@@ -1,1 +1,4 @@
-# Build-an-e-commerce-with-JavaScript
+# Build-an-eCommerce-with-JavaScript
+
+Ironhack Web Development Webinar
+
