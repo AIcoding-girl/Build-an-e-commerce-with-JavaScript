@@ -68,8 +68,7 @@ function inputChange(i, name, price, image) {
             price: price,
             image: image
         });
+        // console.log(cart);
+        showCart();
     };
-
-    // console.log(cart);
-    showCart();
 }
