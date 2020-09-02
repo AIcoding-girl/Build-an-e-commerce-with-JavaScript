@@ -34,7 +34,7 @@ items.forEach((item, i) => {
     <div>Name: ${item.name}</div>
     <div>Price: $${item.price}</div>
     <image src="${item.image}" />
-    <input type="number" placeholder="quantity" onchange='inputChange(${i}, "${item.name}", "${item.price}", "${item.iamge}")'/>
+    <input type="number" placeholder="quantity" onchange='inputChange(${i}, "${item.name}", "${item.price}", "${item.image}")'/>
     <button>Buy Item</button>
     </li>
     `
@@ -42,9 +42,10 @@ items.forEach((item, i) => {
 
 function showCart() {
     let cartItems = document.querySelector('#cart');
+    cartItems.innerHTML = '';
 
     cart.forEach((item, i) => {
-        list.innerHTML += `<li>
+        cartItems.innerHTML += `<li>
         <div>Name: ${item.name}</div>
         <div>Quantity: ${item.quantity}</div>
         <image src="${item.image}" />
@@ -53,7 +54,7 @@ function showCart() {
 };
 
 function inputChange(i, name, price, image) {
-    console.log('I wanted to buy the', i, 'item named', name, 'that costs $', price);
+    // console.log('I wanted to buy the', i, 'item named', name, 'that costs $', price);
     let listItem = document.querySelectorAll('li')[i];
 
     // input.value gives chosen quantity of selected item
@@ -69,6 +70,6 @@ function inputChange(i, name, price, image) {
         });
     };
 
-    console.log(cart);
+    // console.log(cart);
     showCart();
 }

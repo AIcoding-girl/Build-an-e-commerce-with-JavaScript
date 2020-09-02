@@ -4,9 +4,23 @@
 }
 
 body {
+    padding: 10px;
     background-color: #05B085;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
 }
 
 img {
     width: 100px;
+}
+
+/* #cart {
+    background-color: #464646;
+} */
+
+#cart, #items {
+    width: 30vw;
 }
